@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-surface-container-low">
+    <section id="about" className="py-32 bg-surface-container-low bg-[#f5f5dc]">
       <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-24 items-center">
         
         {/* Image */}

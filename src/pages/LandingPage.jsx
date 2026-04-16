@@ -5,16 +5,17 @@ import Services from "../components/Services";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-export default function LandingPage() {
+const LandingPage = () => {
   return (
-    <div>
-      Hello World
+    <>
       <Navbar />
       <Hero />
       <About />
       <Services />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
-}
+};
+
+export default LandingPage;
