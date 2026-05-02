@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center pt-24 overflow-hidden">
 
@@ -35,12 +38,12 @@ const Hero = () => {
             </p>
 
             <div className="flex items-center gap-6 pt-4">
-              <button className="bg-gradient-to-r from-[#735c00] to-[#d4af37] text-white px-8 py-4 rounded-full font-semibold">
+              <button className="bg-gradient-to-r from-[#735c00] to-[#d4af37] text-white px-8 py-4 rounded-full font-semibold" onClick={() => navigate("/services")}>
                 Explore Services
               </button>
 
-              <button className="flex items-center gap-2 text-black font-medium">
-                View Portfolio
+              <button className="flex items-center gap-2 text-black font-medium" onClick={() => navigate("/rent")}>
+                View Rentals
               </button>
             </div>
 
